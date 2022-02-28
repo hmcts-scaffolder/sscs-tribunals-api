@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "Jack_test-Jack testing"
+  description: This is a test from JM
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_Jack_test/sscs-tribunals-api
+    github.com/project-slug: 'jackmaloney/sscs-tribunals-api'
+  tags:
+    - java
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=jack_test
+      title: jack_test on Slack
+      icon: chat
+spec:
+  type: service
+  system: Jack_test
+  lifecycle: experimental
+  owner: dcd_sscs-dev
